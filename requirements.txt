@@ -1,0 +1,10 @@
+django
+django-compressor
+django-polymorphic
+django-extensions
+django-kdl-ldap
+django-libsass
+django-model-utils
+django-redis
+psycopg2-binary
+redis
