@@ -6,13 +6,6 @@ from polymorphic.models import PolymorphicModel
 logger = logging.getLogger(__name__)
 
 
-class Feature(models.Model):
-    title = models.CharField(max_length=32, unique=True)
-
-    def __str__(self):
-        return self.title
-
-
 class UIDMixin:
     @property
     def uid(self):
@@ -31,8 +24,6 @@ class Item(PolymorphicModel, UIDMixin):
 
     title = models.CharField(max_length=512)
     items = models.ManyToManyField('self', blank=True)
-
-    features = models.ManyToManyField(Feature, blank=True)
 
     class Meta:
         ordering = ['title']
