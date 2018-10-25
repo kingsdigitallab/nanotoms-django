@@ -86,7 +86,8 @@ INSTALLED_APPS = [
 ]
 
 INSTALLED_APPS += [
-    'atoms.apps.CoreConfig'
+    'atoms.apps.AtomsConfig',
+    'themes.apps.ThemesConfig'
 ]
 
 INTERNAL_IPS = ['127.0.0.1']
