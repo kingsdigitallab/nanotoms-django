@@ -6,5 +6,6 @@ django-kdl-ldap
 django-libsass
 django-model-utils
 django-redis
+nltk
 psycopg2-binary
 redis
