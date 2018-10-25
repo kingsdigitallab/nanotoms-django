@@ -297,6 +297,11 @@
     tags:
       - django
 
+  - name: django | download nltk data
+    command: "{{ user_home }}/venv/bin/python -c \"import nltk; nltk.download('all')\""
+    tags:
+      - django
+
   - name: django | migrations
     command: "{{ user_home }}/venv/bin/python {{ project_root }}/manage.py makemigrations"
   - command: "{{ user_home }}/venv/bin/python {{ project_root }}/manage.py migrate"
